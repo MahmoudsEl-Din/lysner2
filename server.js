@@ -1,7 +1,7 @@
 'use strict';
 var express = require('express');
 var app = express();
-var io = require('socket.io')(),
+var io = require('socket.io'),
     connect = require('connect'),
     util = require('util'),
     fs      = require('fs'),
