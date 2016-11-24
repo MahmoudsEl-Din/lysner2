@@ -45,7 +45,7 @@ else {
 }
 
 var chat_room = io.listen(app);
-//var statsocket = io.of('/stats');
+var statsocket = io.of('/stats');
 var venters = [];
 var listeners = [];
 var chatting = 0;
