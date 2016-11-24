@@ -1,7 +1,7 @@
 'use strict';
 var express = require('express');
 var app = express();
-var io = require('socket.io'),
+var io = require('socket.io')(),
     connect = require('connect'),
     util = require('util'),
     fs      = require('fs'),
@@ -45,7 +45,7 @@ else {
 }
 
 var chat_room = io.listen(app);
-var statsocket = io.of('/stats');
+//var statsocket = io.of('/stats');
 var venters = [];
 var listeners = [];
 var chatting = 0;
